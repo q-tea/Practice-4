@@ -21,19 +21,4 @@ namespace ConsoleApp4
         string GetCallingCode();
         string GetISOCode();
     }
-    /// <summary>
-    /// Интерфейс, описывающий Абстрактную фабрику</summary>
-    interface IFactory
-    {
-        string Language();
-        string Currency();
-        string City();
-        string TimeZone();
-        string EMSNumber();
-        string Population();
-        string Area();
-        string DateFormat();
-        string CallingCode();
-        string ISOCode();
-    }
 }

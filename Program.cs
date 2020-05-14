@@ -11,42 +11,42 @@ namespace ConsoleApp4
     /// </summary>
     class Application
     {
-        private IFactory Country;
+        private IGet Country;
         /// <summary>
         /// Конструктор класса</summary>
         /// <param name="Country">Название страны</param>
-        public Application(IFactory Country)
+        public Application(IGet Country)
         {
             this.Country = Country;
         }
         public void PrintInfo()
         {
-            Console.WriteLine("Language: " + Country.Language());
-            Console.WriteLine("Currency: " + Country.Currency());
-            Console.WriteLine("Capital: " + Country.City());
-            Console.WriteLine("Time Zone: " + Country.TimeZone());
-            Console.WriteLine("EMS Number: " + Country.EMSNumber());
-            Console.WriteLine("Population: " + Country.Population());
-            Console.WriteLine("Area: " + Country.Area());
-            Console.WriteLine("Date Format: " + Country.DateFormat());
-            Console.WriteLine("Calling Code: " + Country.CallingCode());
-            Console.WriteLine("ISO Code: " + Country.ISOCode());
+            Console.WriteLine("Language: " + Country.GetLanguage());
+            Console.WriteLine("Currency: " + Country.GetCurrency());
+            Console.WriteLine("Capital: " + Country.GetCity());
+            Console.WriteLine("Time Zone: " + Country.GetTimeZone());
+            Console.WriteLine("EMS Number: " + Country.GetEMSNumber());
+            Console.WriteLine("Population: " + Country.GetPopulation());
+            Console.WriteLine("Area: " + Country.GetArea());
+            Console.WriteLine("Date Format: " + Country.GetDateFormat());
+            Console.WriteLine("Calling Code: " + Country.GetCallingCode());
+            Console.WriteLine("ISO Code: " + Country.GetISOCode());
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            IFactory Country;
+            IGet Country;
             string line = "";
             Console.WriteLine("Enter your country:");
             line = Console.ReadLine().ToLower();
             if ((line == "russia") || (line == "россия"))
-                Country = new RUFactory();
+                Country = new RUSetting();
             else if (line == "germany")
-                Country = new DEFactory();
+                Country = new DESetting();
             else if (line == "china")
-                Country = new CNFactory();
+                Country = new CNSetting();
             else
                 throw new Exception("Error! It is illegal to use this application in " + line);
 
