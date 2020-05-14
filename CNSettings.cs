@@ -8,62 +8,35 @@ namespace ConsoleApp4
 {
     /// <summary>
     /// Китайский язык</summary>
-    class CNLanguage : IGet
+    class CNSetting : IGet
     {
-        public string Get() => "Chinese";
-    }
-    /// <summary>
-    /// Китайская валюта</summary>
-    class CNCurrency : IGet
-    {
-        public string Get() => "Yuan";
-    }
-    /// <summary>
-    /// Дефолтный китайский город</summary>
-    class CNCity : IGet
-    {
-        public string Get() => "Beijing";
-    }
-    /// <summary>
-    /// Дефолтный китайский часовой пояс</summary>
-    class CNTimeZone : IGet
-    {
-        public string Get() => "+08";
-    }
-    /// <summary>
-    /// Номер скорой помощи Китая</summary>
-    class CNEMSNumber : IGet
-    {
-        public string Get() => "120";
-    }
-    /// <summary>
-    /// Население Китая</summary>
-    class CNPopulation : IGet
-    {
-        public string Get() => "1427647786";
-    }
-    /// <summary>
-    /// Площадь Китая</summary>
-    class CNArea : IGet
-    {
-        public string Get() => "9596961";
-    }
-    /// <summary>
-    /// Формат времени Китая </summary>
-    class CNDateFormat : IGet
-    {
-        public string Get() => "yyyy-mm-dd";
-    }
-    /// <summary>
-    /// Добавочный номер Китая</summary>
-    class CNCallingCode : IGet
-    {
-        public string Get() => "+86";
-    }
-    /// <summary>
-    /// Китайский ISO код</summary>
-    class CNISOCode : IGet
-    {
-        public string Get() => "CN";
+        public string GetLanguage() => "Chinese";
+        /// <returns>
+        /// Китайская валюта</returns>
+        public string GetCurrency() => "Yuan";
+        /// <returns>
+        /// Дефолтный китайский город</returns>
+        public string GetCity() => "Beijing";
+        /// <returns>
+        /// Дефолтный китайский часовой пояс</returns>
+        public string GetTimeZone() => "+08";
+        /// <returns>
+        /// Номер скорой помощи Китая</returns>
+        public string GetEMSNumber() => "120";
+        /// <returns>
+        /// Население Китая</returns>
+        public string GetPopulation() => "1427647786";
+        /// <returns>
+        /// Площадь Китая</returns>
+        public string GetArea() => "9596961";
+        /// <returns>
+        /// Формат времени Китая </returns>
+        public string GetDateFormat() => "yyyy-mm-dd";
+        /// <returns>
+        /// Добавочный номер Китая</returns>
+        public string GetCallingCode() => "+86";
+        /// <returns>
+        /// Китайский ISO код</returns>
+        public string GetISOCode() => "CN";
     }
 }

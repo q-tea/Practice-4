@@ -21,16 +21,16 @@ namespace ConsoleApp4
         }
         public void PrintInfo()
         {
-            Console.WriteLine("Language: " + Country.Language().Get());
-            Console.WriteLine("Currency: " + Country.Currency().Get());
-            Console.WriteLine("Capital: " + Country.City().Get());
-            Console.WriteLine("Time Zone: " + Country.TimeZone().Get());
-            Console.WriteLine("EMS Number: " + Country.EMSNumber().Get());
-            Console.WriteLine("Population: " + Country.Population().Get());
-            Console.WriteLine("Area: " + Country.Area().Get());
-            Console.WriteLine("Date Format: " + Country.DateFormat().Get());
-            Console.WriteLine("Calling Code: " + Country.CallingCode().Get());
-            Console.WriteLine("ISO Code: " + Country.ISOCode().Get());
+            Console.WriteLine("Language: " + Country.Language());
+            Console.WriteLine("Currency: " + Country.Currency());
+            Console.WriteLine("Capital: " + Country.City());
+            Console.WriteLine("Time Zone: " + Country.TimeZone());
+            Console.WriteLine("EMS Number: " + Country.EMSNumber());
+            Console.WriteLine("Population: " + Country.Population());
+            Console.WriteLine("Area: " + Country.Area());
+            Console.WriteLine("Date Format: " + Country.DateFormat());
+            Console.WriteLine("Calling Code: " + Country.CallingCode());
+            Console.WriteLine("ISO Code: " + Country.ISOCode());
         }
     }
     class Program

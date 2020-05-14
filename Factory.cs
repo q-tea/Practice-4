@@ -10,45 +10,45 @@ namespace ConsoleApp4
     /// Класс немецкой фабрики</summary>
     class DEFactory : IFactory
     {
-        public IGet Language() => new DELanguage();
-        public IGet Currency() => new DECurrency();
-        public IGet City() => new DECity();
-        public IGet TimeZone() => new DETimeZone();
-        public IGet EMSNumber() => new DEEMSNumber();
-        public IGet Population() => new DEPopulation();
-        public IGet Area() => new DEArea();
-        public IGet DateFormat() => new DEDateFormat();
-        public IGet CallingCode() => new DECallingCode();
-        public IGet ISOCode() => new DEISOCode();
+        public string Language() => new DESetting().GetLanguage();
+        public string Currency() => new DESetting().GetCurrency();
+        public string City() => new DESetting().GetCity();
+        public string TimeZone() => new DESetting().GetTimeZone();
+        public string EMSNumber() => new DESetting().GetEMSNumber();
+        public string Population() => new DESetting().GetPopulation();
+        public string Area() => new DESetting().GetArea();
+        public string DateFormat() => new DESetting().GetDateFormat();
+        public string CallingCode() => new DESetting().GetCallingCode();
+        public string ISOCode() => new DESetting().GetISOCode();
     }
     /// <summary>
     /// Класс русской фабрики</summary>
     class RUFactory : IFactory
     {
-        public IGet Language() => new RULanguage();
-        public IGet Currency() => new RUCurrency();
-        public IGet City() => new RUCity();
-        public IGet TimeZone() => new RUTimeZone();
-        public IGet EMSNumber() => new RUEMSNumber();
-        public IGet Population() => new RUPopulation();
-        public IGet Area() => new RUArea();
-        public IGet DateFormat() => new RUDateFormat();
-        public IGet CallingCode() => new RUCallingCode();
-        public IGet ISOCode() => new RUISOCode();
+        public string Language() => new RUSetting().GetLanguage();
+        public string Currency() => new RUSetting().GetCurrency();
+        public string City() => new RUSetting().GetCity();
+        public string TimeZone() => new RUSetting().GetTimeZone();
+        public string EMSNumber() => new RUSetting().GetEMSNumber();
+        public string Population() => new RUSetting().GetPopulation();
+        public string Area() => new RUSetting().GetArea();
+        public string DateFormat() => new RUSetting().GetDateFormat();
+        public string CallingCode() => new RUSetting().GetCallingCode();
+        public string ISOCode() => new RUSetting().GetISOCode();
     }
     /// <summary>
     /// Класс китайской фабрики</summary>
     class CNFactory : IFactory
     {
-        public IGet Language() => new CNLanguage();
-        public IGet Currency() => new CNCurrency();
-        public IGet City() => new CNCity();
-        public IGet TimeZone() => new CNTimeZone();
-        public IGet EMSNumber() => new CNEMSNumber();
-        public IGet Population() => new CNPopulation();
-        public IGet Area() => new CNArea();
-        public IGet DateFormat() => new CNDateFormat();
-        public IGet CallingCode() => new CNCallingCode();
-        public IGet ISOCode() => new CNISOCode();
+        public string Language() => new CNSetting().GetLanguage();
+        public string Currency() => new CNSetting().GetCurrency();
+        public string City() => new CNSetting().GetCity();
+        public string TimeZone() => new CNSetting().GetTimeZone();
+        public string EMSNumber() => new CNSetting().GetEMSNumber();
+        public string Population() => new CNSetting().GetPopulation();
+        public string Area() => new CNSetting().GetArea();
+        public string DateFormat() => new CNSetting().GetDateFormat();
+        public string CallingCode() => new CNSetting().GetCallingCode();
+        public string ISOCode() => new CNSetting().GetISOCode();
     }
 }

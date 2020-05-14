@@ -10,21 +10,30 @@ namespace ConsoleApp4
     /// Базовый интерфейс, описывающий классы вывода параметров</summary>
     interface IGet
     {
-        string Get();
+        string GetLanguage();
+        string GetCurrency();
+        string GetCity();
+        string GetTimeZone();
+        string GetEMSNumber();
+        string GetPopulation();
+        string GetArea();
+        string GetDateFormat();
+        string GetCallingCode();
+        string GetISOCode();
     }
     /// <summary>
     /// Интерфейс, описывающий Абстрактную фабрику</summary>
     interface IFactory
     {
-        IGet Language();
-        IGet Currency();
-        IGet City();
-        IGet TimeZone();
-        IGet EMSNumber();
-        IGet Population();
-        IGet Area();
-        IGet DateFormat();
-        IGet CallingCode();
-        IGet ISOCode();
+        string Language();
+        string Currency();
+        string City();
+        string TimeZone();
+        string EMSNumber();
+        string Population();
+        string Area();
+        string DateFormat();
+        string CallingCode();
+        string ISOCode();
     }
 }

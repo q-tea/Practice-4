@@ -7,63 +7,38 @@ using System.Threading.Tasks;
 namespace ConsoleApp4
 {
     /// <summary>
-    /// Немецкий язык</summary>
-    class DELanguage : IGet
+    /// Немецкие настройки</summary>
+    public class DESetting : IGet
     {
-        public string Get() => "German";
-    }
-    /// <summary>
-    /// Немецкая валюта</summary>
-    class DECurrency : IGet
-    {
-        public string Get() => "Euro";
-    }
-    /// <summary>
-    /// Дефолтный город Германии</summary>
-    class DECity : IGet
-    {
-        public string Get() => "Berlin";
-    }
-    /// <summary>
-    /// Часовой пояс Германии</summary>
-    class DETimeZone : IGet
-    {
-        public string Get() => "+01";
-    }
-    /// <summary>
-    /// Немецкий номер скорой помощи</summary>
-    class DEEMSNumber : IGet
-    {
-        public string Get() => "112";
-    }
-    /// <summary>
-    /// Население Германии</summary>
-    class DEPopulation : IGet
-    {
-        public string Get() => "83149300";
-    }
-    /// <summary>
-    /// Площадь Германии</summary>
-    class DEArea : IGet
-    {
-        public string Get() => "357022";
-    }
-    /// <summary>
-    /// Немеций вормат даты</summary>
-    class DEDateFormat : IGet
-    {
-        public string Get() => "mm/dd/yyy";
-    }
-    /// <summary>
-    /// Немецкий добавочный номер</summary>
-    class DECallingCode : IGet
-    {
-        public string Get() => "+49";
-    }
-    /// <summary>
-    /// Немецкий ISO код</summary>
-    class DEISOCode : IGet
-    {
-        public string Get() => "DE";
+        /// <returns>
+        /// Немецкий язык</returns>
+        public string GetLanguage() => "German";
+        /// <returns>
+        /// Немецкая валюта</returns>
+        public string GetCurrency() => "Euro";
+        /// <returns>
+        /// Немецкий город по умолчанию</returns>
+        public string GetCity() => "Berlin";
+        /// <returns>
+        /// Немецкий часовой пояс по умолчанию</returns>
+        public string GetTimeZone() => "+01";
+        /// <returns>
+        /// Немецкий номер скорой помощи</returns>
+        public string GetEMSNumber() => "112";
+        /// <returns>
+        /// Население Германии</returns>
+        public string GetPopulation() => "83149300";
+        /// <returns>
+        /// Площадь Германии</returns>
+        public string GetArea() => "357022";
+        /// <returns>
+        /// Немецкий формат времени</returns>
+        public string GetDateFormat() => "mm/dd/yyy";
+        /// <returns>
+        /// Немецкий добавочный номер</returns>
+        public string GetCallingCode() => "+49";
+        /// <returns>
+        /// Немецкий ISO код</returns>
+        public string GetISOCode() => "DE";
     }
 }
