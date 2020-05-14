@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
+    /// <summary>
+    /// Класс приложения.
+    /// </summary>
     class Application
     {
         private IFactory Country;
+        /// <summary>
+        /// Конструктор класса</summary>
+        /// <param name="Country">Название страны</param>
         public Application(IFactory Country)
         {
             this.Country = Country;
@@ -34,12 +40,12 @@ namespace ConsoleApp4
             IFactory Country;
             string line = "";
             Console.WriteLine("Enter your country:");
-            line = Console.ReadLine();
-            if (line == "Russia")
+            line = Console.ReadLine().ToLower();
+            if ((line == "russia") || (line == "россия"))
                 Country = new RUFactory();
-            else if (line == "Germany")
+            else if (line == "germany")
                 Country = new DEFactory();
-            else if (line == "China")
+            else if (line == "china")
                 Country = new CNFactory();
             else
                 throw new Exception("Error! It is illegal to use this application in " + line);

@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
+    /// <summary>
+    /// Базовый интерфейс, описывающий классы вывода параметров</summary>
     interface IGet
     {
         string Get();
     }
+    /// <summary>
+    /// Интерфейс, описывающий Абстрактную фабрику</summary>
     interface IFactory
     {
         IGet Language();

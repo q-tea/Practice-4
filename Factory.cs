@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
+    /// <summary>
+    /// Класс немецкой фабрики</summary>
     class DEFactory : IFactory
     {
         public IGet Language() => new DELanguage();
@@ -19,6 +21,8 @@ namespace ConsoleApp4
         public IGet CallingCode() => new DECallingCode();
         public IGet ISOCode() => new DEISOCode();
     }
+    /// <summary>
+    /// Класс русской фабрики</summary>
     class RUFactory : IFactory
     {
         public IGet Language() => new RULanguage();
@@ -32,6 +36,8 @@ namespace ConsoleApp4
         public IGet CallingCode() => new RUCallingCode();
         public IGet ISOCode() => new RUISOCode();
     }
+    /// <summary>
+    /// Класс китайской фабрики</summary>
     class CNFactory : IFactory
     {
         public IGet Language() => new CNLanguage();
